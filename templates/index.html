@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+</head>
+<body> 
+    <div class="main-container">
+        <header class="header">
+            <img src="{{ url_for('static', filename='images/logo_image.jpg') }}" alt="Loan Logo" class="header-logo">
+            <h1>Smart Loan Recommendations to Minimize Defaults and Maximize Profit.</h1>
+        </header>
+        
+        <div class="selection-container">
+            <div class="select-box">
+                <h1>Gender</h1>
+                <select>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <h1>Occupation</h1>
+                <select>
+                    <option value="">Select</option>
+                    <option value="1">Engineer</option>
+                    <option value="2">Doctor</option>
+                    <option value="3">Farmer</option>
+                    <option value="4">Government Servant</option>
+                    <option value="5">Lawyer</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <h1>Loan Amount</h1>
+                <input type="number" class="number-input" placeholder="Enter your loan amount">
+            </div>
+            <div class="select-box">
+                <h1>Previous Default</h1>
+                <select>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <h1>Education</h1>
+                <select>
+                    <option value="master">Master</option>
+                    <option value="high_school">High School</option>
+                    <option value="bachelor">Bachelor</option>
+                    <option value="associate">Associate</option>
+                    <option value="doctorate">Doctorate</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <h1>Income</h1>
+                <input type="number" class="number-input" placeholder="Enter income">
+            </div>
+            <div class="select-box">
+                <h1>Age</h1>
+                <input type="number" class="number-input" placeholder="Enter age">
+            </div>
+            <div class="select-box">
+                <h1>Credit Score</h1>
+                <input type="number" min="300" max="850" class="number-input" placeholder="Enter credit score (300-850)">
+            </div>
+            <div class="select-box">
+                <h1>Experience</h1>
+                <input type="number" class="number-input" placeholder="Enter your experience">
+            </div>
+            <div class="select-box">
+                <h1>Home Ownership</h1> 
+                <select>
+                    <option value="rent">Rent</option>
+                    <option value="own">Own</option>
+                    <option value="mortgage">Mortgage</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <h1>Loan Intent</h1>
+                <select>
+                    <option value="personal">Personal</option>
+                    <option value="education">Education</option>
+                    <option value="medical">Medical</option>
+                    <option value="venture">Venture</option>
+                    <option value="home_improvement">Home Improvement</option>
+                    <option value="debt_consolidation">Debt Consolidation</option>
+                </select>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
